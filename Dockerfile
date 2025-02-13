@@ -31,6 +31,8 @@ RUN apt-get update && \
   texlive-lang-polish \
   texlive-plain-generic \
   texlive-xetex \
+  texlive-bibtex-extra \
+  biber \
   ttf-mscorefonts-installer && \
   apt-get autoclean && apt-get --purge --yes autoremove && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
