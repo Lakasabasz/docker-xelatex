@@ -13,7 +13,9 @@ LABEL org.opencontainers.image.description="Docker image for compiling XeLaTeX d
 RUN apt-get update && \
   apt-get install -y software-properties-common && \
   add-apt-repository -y multiverse
+
 # Install all TeX and LaTeX dependencies
+RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections 
 RUN apt-get update && \
   apt-get install --yes --no-install-recommends \
   ca-certificates \
