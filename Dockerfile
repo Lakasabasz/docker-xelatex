@@ -33,6 +33,7 @@ RUN apt-get update && \
   texlive-xetex \
   texlive-bibtex-extra \
   biber \
+  python3-pygments \
   ttf-mscorefonts-installer && \
   apt-get autoclean && apt-get --purge --yes autoremove && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
