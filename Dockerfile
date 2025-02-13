@@ -12,7 +12,7 @@ LABEL org.opencontainers.image.description="Docker image for compiling XeLaTeX d
 
 RUN apt-get update && \
   apt-get install -y software-properties-common &&
-  apt-add-repository -y multiverse
+  add-apt-repository -y multiverse
 # Install all TeX and LaTeX dependencies
 RUN apt-get update && \
   apt-get install --yes --no-install-recommends \
